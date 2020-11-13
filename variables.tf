@@ -1,19 +1,19 @@
 #
 # Environment Variables
 #
-variable "vsphere_user" {}
-variable "vsphere_password" {}
-variable "vsphere_server" {}
+variable "vmc_vsphere_user" {}
+variable "vmc_vsphere_password" {}
+variable "vmc_vsphere_server" {}
 
 #
-# Other Variables Variables
+# Other Variables
 #
 variable "vcenter" {
   type = map
   default = {
-    dc = "wdc-06-vc12"
-    cluster = "wdc-06-vc12c01"
-    datastore = "wdc-06-vc12c01-vsan"
-    resource_pool = "wdc-06-vc12c01/Resources"
+    dc = "SDDC-Datacenter"
+    cluster = "Cluster-1"
+    datastore = "WorkloadDatastore"
+    resource_pool = "Cluster-1/Resources"
   }
 }
