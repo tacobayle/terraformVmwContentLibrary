@@ -8,6 +8,7 @@ variable "vmc_vsphere_server" {}
 #
 # Other Variables
 #
+
 variable "vcenter" {
   type = map
   default = {
