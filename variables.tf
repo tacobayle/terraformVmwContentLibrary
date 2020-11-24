@@ -12,10 +12,10 @@ variable "vsphere_server" {}
 variable "vcenter" {
   type = map
   default = {
-    dc = "SDDC-Datacenter"
-    cluster = "Cluster-1"
-    datastore = "WorkloadDatastore"
-    resource_pool = "Cluster-1/Resources"
+    dc = "sof2-01-vc08"
+    cluster = "sof2-01-vc08c01"
+    datastore = "sof2-01-vc08c01-vsan"
+    resource_pool = "sof2-01-vc08c01/Resources"
   }
 }
 
@@ -23,7 +23,6 @@ variable "contentLibrary" {
   default = {
     name = "Avi Content Library"
     description = "Avi Content Library"
-    files = ["/home/ubuntu/controller-20.1.1-9071.ova", "/home/ubuntu/controller-20.1.2-9171.ova"]
-    resource_pool = "Cluster-1/Resources"
+    files = ["/home/ubuntu/controller-20.1.2-9171.ova"]
   }
 }
