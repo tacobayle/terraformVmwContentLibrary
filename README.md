@@ -1,7 +1,7 @@
 # vmwContentLibrary
 
 ## Goals
-Deploy a content library and populate it with files
+TF plan to deploy a content library and populate it with files
 
 ## Prerequisites:
 - TF is installed
